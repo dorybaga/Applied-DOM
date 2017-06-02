@@ -5,12 +5,19 @@
    * which takes zero arguments
    * and does not return a value.
    *
+
    * declare a variable named lightId
    * and assign it's value to the context's dataset.lightId property
    *
    * use a dom method to select an element where it's ID matches the value of lightId
    * on this dom element, set the className to 'light-green'
    */
+
+  function setMyLightGreen () {
+
+  }
+
+
 
 
   /*
@@ -210,6 +217,10 @@
    *
    * Hint: Do not declare a new function expression as an event handler.
    */
+
+
+
+
 
 
 }(window));
