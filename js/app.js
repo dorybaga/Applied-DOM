@@ -13,12 +13,10 @@
    * on this dom element, set the className to 'light-green'
    */
 
-  function setMyLightGreen () {
-
+  function setMyLightGreen() {
+    var lightId = this.dataset.lightId;
+    document.querySelectorAll("#lightId").className = "light-green";
   }
-
-
-
 
   /*
    * Create a function named setMyLightClass
@@ -32,6 +30,10 @@
    * on this dom element, set the className to the value of desiredClass
    */
 
+   function setMyLightClass(event, desiredClass) {
+    var lightId = this.dataset.lightId;
+    document.querySelectorAll("#lightId").className = "desiredClass";
+   }
 
   /*
    * Declare 15 constants btn1, btn2, btn3, ...
@@ -39,6 +41,21 @@
    * to the button that has an id of the same name.
    */
 
+   var btn1 = document.querySelectorAll("#btn1");
+   var btn2 = document.querySelectorAll("#btn2");
+   var btn3 = document.querySelectorAll("#btn3");
+   var btn4 = document.querySelectorAll("#btn4");
+   var btn5 = document.querySelectorAll("#btn5");
+   var btn6 = document.querySelectorAll("#btn6");
+   var btn7 = document.querySelectorAll("#btn7");
+   var btn8 = document.querySelectorAll("#btn8");
+   var btn9 = document.querySelectorAll("#btn9");
+   var btn10 = document.querySelectorAll("#btn10");
+   var btn11 = document.querySelectorAll("#btn11");
+   var btn12 = document.querySelectorAll("#btn12");
+   var btn13 = document.querySelectorAll("#btn13");
+   var btn14 = document.querySelectorAll("#btn14");
+   var btn15 = document.querySelectorAll("#btn15");
 
   /*
    * Add a click event listener to btn1
