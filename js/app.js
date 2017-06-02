@@ -79,6 +79,9 @@
    * to set the context to the correct object
    */
 
+   btn2.addEventListener("click", () => {
+    setMyLightGreen.apply(this.btn2);
+   });
 
   /*
    * Add a click event listener to btn3
