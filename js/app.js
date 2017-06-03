@@ -15,7 +15,8 @@
 
   function setMyLightGreen() {
     var lightId = this.dataset.lightId;
-    document.getElementById(lightId).className = "light-green";
+    var lightClass = document.getElementById(lightId);
+    lightClass.className = "light-green";
   }
 
   /*
@@ -32,7 +33,8 @@
 
    function setMyLightClass(event, desiredClass) {
     var lightId = this.dataset.lightId;
-    document.getElementById(lightId).className = "desiredClass";
+    var lightClass = document.getElementById(lightId);
+    lightClass.className = desiredClass;
    }
 
   /*
@@ -157,8 +159,9 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+
    btn8.addEventListener("click", function(event){
-    setMyLightGreen.call(this, event, "light-green");
+    setMyLightClass.call(this, event, "light-green");
    });
 
   /*
@@ -172,6 +175,9 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+   btn9.addEventListener("click", (event) => {
+    setMyLightClass.call(btn9, event, "light-green");
+   });
 
   /*
    * Declare a new const named setLight10Green
