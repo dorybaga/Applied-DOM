@@ -101,6 +101,9 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+   btn4.addEventListener("click", function(event) {
+    setMyLightGreen.apply(this, [event, "light-green"]);
+   });
 
   /*
    * Add a click event listener to btn5
@@ -113,6 +116,9 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+   btn5.addEventListener("click", (event) => {
+    setMyLightGreen.apply(btn5, [event, "light-green"]);
+   });
 
   /*
    * Add a click event listener to btn6
